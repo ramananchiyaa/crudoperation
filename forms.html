@@ -1,0 +1,44 @@
+<html>
+   <body bgcolor="silver">
+       <h1 align="center"><u>CRUD OPERATIONS</u></h1>
+       
+            <form action = "http://127.0.0.1:8081/create" method = "POST" align="center">
+                <table align="center">
+            <h2 align="center">Add User</h2>
+           <tr>
+               <td>
+                    Id:<input type = "text" name ="id"> <br>
+               </td>
+           </tr>
+           <tr>
+                <td>
+                        Name: <input type = "text" name ="name"> <br>
+                </td>
+            </tr>
+            <tr>
+                    <td>
+                            EmailId: <input type = "email" name ="email"> <br>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <button >Add</button>
+        </form>
+                           
+       
+        <form action = "http://127.0.0.1:8081/User" method = "POST" align="center">
+            <h2>Display By ID</h2>
+             Id: <input type = "text" name ="id"> <br><br>
+             <button >View</button>
+          </form>
+          <form action = "http://127.0.0.1:8081/listUser" method = "POST" align="center">
+            <h2>Display All</h2>
+              <button >Display</button>
+          </form>
+      <form action = "http://127.0.0.1:8081/delete" method = "POST" align="center">
+        <h2>Delete By ID</h2>
+         Id: <input type = "text" name ="id"> <br><br>
+         <button >Delete</button>
+      </form>
+   </body>
+</html>
